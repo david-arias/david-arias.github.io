@@ -15,16 +15,17 @@ $(document).ready(function() {
 		);
 
 
+	$( ".dataFName" ).text ('fullName: ' + brw.fullName );
+	$( ".dataName" ).text ('name: ' + brw.name );
+	$( ".dataFVer" ).text ('fullVersion: ' + brw.fullVersion );
+	$( ".dataFVer" ).text ('version: ' + brw.version );
+
+
 	/*chrome*/
-	if (brw.name === "chrome") {
+	/*if (brw.name === "chrome") {
 		
 		//window.location.replace("http://www.google.com");
 
-		$( ".dataFName" ).text ('fullName: ' + brw.fullName );
-		$( ".dataName" ).text ('name: ' + brw.name );
-		$( ".dataFVer" ).text ('fullVersion: ' + brw.fullVersion );
-		$( ".dataFVer" ).text ('version: ' + brw.version );
-
-	}
+	}*/
 
 });
