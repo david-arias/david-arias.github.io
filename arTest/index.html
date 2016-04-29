@@ -24,6 +24,7 @@
 	<script src='js/threex.jsarucomarker.js'></script>
 
 	<script src='js/threex.videotexture.js'></script>
+	<script src='js/iphone-inline-video.browser.js'></script>
 
 
 	<style>
@@ -55,6 +56,9 @@
 <script>
 	$(".playTrigger").click( function(){
 		$(".playBtn").fadeOut();
+
+		makeVideoPlayableInline(vid);
+		
 		vid.play();
 	});
 </script>
