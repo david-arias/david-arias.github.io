@@ -4,15 +4,29 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>- lettering -</title>
-	<link rel="stylesheet" href="">
+
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li>
-				<a href="lettering/">Lettering</a>
-			</li>
-		</ul>
-	</nav>
+	<div class="imgCont">
+		
+	</div>
+
+	<script type="text/javascript" src="js/jquery_1.12.4.js"></script>
+	<script>
+		var dir = "img/";
+		var fileextension = ".jpg";
+		$.ajax({
+		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+		    url: dir,
+		    success: function (data) {
+		        //Lsit all png file names in the page
+		        $(data).find("a:contains(" + fileextension + ")").each(function () {
+		            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+		            $(".imgCont").append($("<img src=" + dir + filename + "></img>"));
+		        });
+		    }
+		});
+	</script>
 </body>
 </html>
