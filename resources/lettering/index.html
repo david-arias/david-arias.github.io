@@ -17,15 +17,23 @@
 		var dir = "img/";
 		var fileextension = ".jpg";
 		$.ajax({
-		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-		    url: dir,
-		    success: function (data) {
-		        //Lsit all png file names in the page
-		        $(data).find("a:contains(" + fileextension + ")").each(function () {
-		            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-		            $(".imgCont").append($("<img src=" + dir + filename + "></img>"));
-		        });
-		    }
+			//This will retrieve the contents of the folder if the folder is configured as ‘browsable’
+			url: dir,
+			success: function (data) {
+				//Lsit all png file names in the page
+					$(data).find("a:contains(" + fileextension + ")").each(function () {
+					// var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+					var filename = this.pathname;
+					var rest = filename.substring(0, filename.lastIndexOf("/") + 1);
+					var last = filename.substring(filename.lastIndexOf("/") + 1, filename.length);
+					rest1=rest+dir;
+					filename=rest1+last;
+					if(filename==rest1) {
+					} else {
+						$(".imgCont").append($(""));
+					}
+				});
+			}
 		});
 	</script>
 </body>
