@@ -4,7 +4,7 @@
   "description": "socket test 1.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/main.js"
   },
   "keywords": [],
   "author": "David Arias <devius123@gmail.com>",
