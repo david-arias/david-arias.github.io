@@ -1,14 +1,27 @@
 TEST PARA SITIOS WEB
 =====================
 
-- DEVIUS - 
+-- DEVIUS -- 
 
 repositorio para creación de pruebas de páginas web y testeo en dispositivos móviles
 
 
 
-INFO DE CONTACT
+
+Proyectos:
+
+- socket ( pruebas de sockets con socket.io y node.js )
+
+
+
+
+
+
+
+
+INFO DE CONTACTO
 =====================
 
-David Fernando Arias Bernal
-devius123@gmail.com
+- David Fernando Arias Bernal
+
+- devius123@gmail.com
