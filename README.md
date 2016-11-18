@@ -11,7 +11,7 @@ repositorio para creación de pruebas de páginas web y testeo en dispositivos m
 
 ## Proyectos:
 
-* socket ( pruebas de sockets con socket.io y node.js )
+<!-- * socket ( pruebas de sockets con socket.io y node.js ) -->
 
 
 
