@@ -11,11 +11,19 @@ var options = { year: "numeric", month: "numeric", day: "numeric", hour: "2-digi
 var time = date.toLocaleTimeString("en-us", options);
 /* * * */
 
-app.get( '/', function(req, res) {
-	res.status(200).send(`<h3>Hola mundo!! XD</h3>`);
+/* * * */
+app.use(express.static('public'));
+/* * * */
+
+app.get( '/serv', function(req, res) {
+	res.status(200).send(
+		`
+		<h3>Hola mundo!! </h3>
+		`
+	);
 });
 
 /* * * listen * * * */
-server.listen(port , function() {
+server.listen(3000 , function() {
 	console.log(`Server = http://192.168.0.4:${port} || ${time}`);
 });
